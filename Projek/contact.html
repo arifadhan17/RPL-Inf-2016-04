@@ -41,11 +41,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 </div>
 <!--- /header ---->
-<!--- footer-btm ---->
-<div class="footer-btm wow fadeInLeft animated" data-wow-delay=".5s">
-	<div class="container">
-	<div class="navigation">
-			<nav class="navbar navbar-static-top">	<!--static penting biar submenunya tetap-->
+<!--- Navigation ---->    
+<nav class="navbar navbar-static-top">	<!--static penting biar submenunya tetap-->
 	<div class="footer-btm wow fadeInLeft animated" data-wow-delay="1.5s">
 		<div class="navbar-main">  		
 			<div class="container"> 	
@@ -69,7 +66,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								
 								<li><a class="has-child" href="#">LOKET</a>
 									<ul class="submenu">
-										<li><a class="submenu-item" href="#">Login</a></li>
+										<li><a class="submenu-item" a href="#" data-toggle="modal" data-target="#myModal4" >Login</a></li>
 										<li><a class="submenu-item" href="#">Menu CV</a></li>
 									</ul>							
 								</li>
@@ -79,10 +76,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<li><a class="submenu-item" href="#">Pesan Tiket</a></li>
 										<li><a class="submenu-item" href="#">Cetak Tiket</a></li>
 									</ul>
-								</li>
-
-								<li><a class="" href="contact.html">CONTACT US</a></li>
-								<li><a class="" href="about.html">ABOUT US</a></li>
+								</li>							
 
 							</ul>
 						</nav>
@@ -94,12 +88,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 	</div>
 </nav>
-		</div>
-		
-		<div class="clearfix"></div>
-	</div>
-</div>
-<!--- /footer-btm ---->
+<!--- /Navigation ---->
 <!--- banner-1 ---->
 <div class="banner">
 	<div class="container">
@@ -255,6 +244,47 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 </div>
 <!--- /copy-right ---->
+
+<!-- signin isiin login untuk loket disini-->
+	<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content modal-info">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>						
+				</div>
+				<div class="modal-body modal-spa">
+					<div class="login-grids">
+						<div class="login">
+							<div class="login-left">
+								<ul><br><br><br>
+									<center>
+									<img src="images/map1.png" alt="">
+									<h2><b>Login <br>Petugas Loket</b></h2>
+									</center>
+								</ul>
+							</div>
+							<div class="login-right">
+								<form>
+									<h3>Signin with your account </h3>
+									<input type="text" value="Enter your Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your mobile number or Email';}" required="">	
+									<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">	
+									<h4><a href="#">Forgot password</a></h4>
+									<div class="single-bottom">
+										<input type="checkbox" id="brand" value="">
+										<label for="brand"><span></span>Remember Me.</label>
+									</div>
+									<input type="submit" value="LOGIN">
+								</form>
+							</div>
+							<div class="clearfix"></div>								
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+<!-- //signin -->
 
 </body>
 </html>
