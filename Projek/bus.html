@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Blibli.com</title>
+<title>Ata Gata Tiket Online</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Green Wheels Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -34,10 +34,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- top-header -->
 <div class="top-header">
 	<div class="container">
-		<ul class="tp-hd-lft wow fadeInLeft animated" data-wow-delay=".5s">
-			<li class="hm"><a href="index.html"><i class="fa fa-home"></i></a></li>
-			<li class="prnt"><a href="javascript:window.print()">Print/SMS Ticket</a></li>
-				
+		<ul class="tp-hd-lft wow fadeInLeft animated" data-wow-delay=".5s">				
 		</ul>
 		<div class="clearfix"></div>
 	</div>
@@ -78,7 +75,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								
 								<li><a class="has-child" href="#">LOKET</a>
 									<ul class="submenu">
-										<li><a class="submenu-item" href="#">Login</a></li>
+										<li><a class="submenu-item" a href="#" data-toggle="modal" data-target="#myModal4" >Login</a></li> <!--masuk ke modal khusus login-->
 										<li><a class="submenu-item" href="#">Menu CV</a></li>
 									</ul>							
 								</li>
@@ -986,5 +983,46 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</ul>
 	</div>
 </div>
+
+<!-- signin isiin login untuk loket disini-->
+	<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content modal-info">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>						
+				</div>
+				<div class="modal-body modal-spa">
+					<div class="login-grids">
+						<div class="login">
+							<div class="login-left">
+								<ul><br><br><br>
+									<center>
+									<img src="images/map1.png" alt="">
+									<h2><b>Login <br>Petugas Loket</b></h2>
+									</center>
+								</ul>
+							</div>
+							<div class="login-right">
+								<form>
+									<h3>Signin with your account </h3>
+									<input type="text" value="Enter your Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your mobile number or Email';}" required="">	
+									<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">	
+									<h4><a href="#">Forgot password</a></h4>
+									<div class="single-bottom">
+										<input type="checkbox" id="brand" value="">
+										<label for="brand"><span></span>Remember Me.</label>
+									</div>
+									<input type="submit" value="LOGIN">
+								</form>
+							</div>
+							<div class="clearfix"></div>								
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+<!-- //signin -->
 </body>
 </html>
