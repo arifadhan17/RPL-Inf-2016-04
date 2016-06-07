@@ -51,13 +51,13 @@ label{
     font-family: 'Oswald', sans-serif;
 }
 .logo span {
-    color:#34ad00;
+    color:#000000;
 }
 i.fa.fa-home {
     font-size: 24px;
 }
 .top-header {
-    background-color: #3F84B1;
+    background-color: #3399FF;
     border-bottom: 0 none;
 	height: 36px;
     line-height: 35px;
@@ -427,7 +427,7 @@ i.fa.fa-truck,i.fa.fa-user,i.fa.fa-ticket {
     color:#4CFF00;
 }
 .footer-btm {
-    background:#4CB320;
+    background:#33CCFF;
     padding: 0.5em 0;
 	text-align:center;
 }
@@ -443,7 +443,7 @@ i.fa.fa-truck,i.fa.fa-user,i.fa.fa-ticket {
     color:#000000;
 }
 .copy-right {
-    background:#34ad00;
+    background:#33CCFF;
     text-align: center;
     padding: 0.5em 0;
 }
@@ -2252,7 +2252,7 @@ ul.set-1 {
 .navbar-main {
   margin-bottom: 0;
   color: #fff;
-  background: #4CB320;
+  background: #33CCFF;
 }
 .navbar-main .navbar-brand {
   border-bottom: none !important;
@@ -2268,7 +2268,7 @@ ul.set-1 {
 .navbar-main .submenu {
   position: absolute;
   list-style: none;
-  background: #4CB320;
+  background: #33CCFF;
   padding: 0;
   width: 150px;
   height: 60px
