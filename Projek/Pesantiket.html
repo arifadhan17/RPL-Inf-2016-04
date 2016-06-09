@@ -1,7 +1,13 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Ata Gata Tiket Online</title>
+<title>Blibli.com</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Green Wheels Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -24,19 +30,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</script>
 <!--//end-animate-->
 </head>
-
 <body>
-<!-- top-header -->
-<div class="top-header">
-	<div class="container">
-	</div>
-</div>
-<!--- /top-header ---->
 <!--- header ---->
 <div class="header">
 	<div class="container">
 		<div class="logo wow fadeInDown animated" data-wow-delay=".5s">
-			<a href="index.html">Ata Gata <span>Tiket Online</span> - Tempat Pembelian Tiket Cepat dan Mudah</a>
+			<a href="index.html">Ata-Gata <span>Tiket: </span>Tempat Pembelian Tiket Cepat dan Mudah</a>
 		</div>
 		<div class="clearfix"></div>
 	</div>
@@ -63,16 +62,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<nav class="navbar navbar-main">	
 							<ul class="nav navbar-nav">
 							
-								<li><a class="is-active" href="index.html">HOME</a></li>
+								<li><a  href="index.html">HOME</a></li>
 								
 								<li><a class="has-child" href="#">LOKET</a>
 									<ul class="submenu">
 										<li><a class="submenu-item" a href="#" data-toggle="modal" data-target="#myModal4" >Login</a></li> <!--masuk ke modal khusus login-->
-										<li><a class="submenu-item" href="MenuCv.html">Menu CV</a></li>
+										<li><a class="submenu-item" href="#">Menu CV</a></li>
 									</ul>							
 								</li>
 								
-								<li><a class="has-child" href="#">TIKET</a>
+								<li><a class="has-child is-active" href="#">TIKET</a>
 									<ul class="submenu">
 										<li><a class="submenu-item" href="Pesantiket.html">Pesan Tiket</a></li>
 										<li><a class="submenu-item" href="#">Cetak Tiket</a></li>
@@ -94,30 +93,59 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </nav>
 <!--- /Navigation ---->
 <!--- banner ---->
-<div class="banner">
+<div class="banner-1">
 	<div class="container">
-		<h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;"> Ata-Gata Tiket Online</h1>
+		<h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;"> Ata-Gata Tiket , Terbaik dalam melayani perjalanan anda</h1>
 	</div>
 </div>
-<!--- /banner ---->
-
-<!---copy-right ---->
-<div class="copy-right">
-	<div class="container">
-	
-		<div class="footer-social-icons wow fadeInDown animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInDown;">
-			<ul>
-				<li><a class="facebook" href="#"><span>Facebook</span></a></li>
-				<li><a class="twitter" href="#"><span>Twitter</span></a></li>
-				<li><a class="flickr" href="#"><span>Flickr</span></a></li>
-				<li><a class="googleplus" href="#"><span>Google+</span></a></li>
-				<li><a class="dribbble" href="#"><span>Dribbble</span></a></li>
-			</ul>
+<div class="container">
+	<div class="col-md-7 bann-info">
+		<h2>Masukkan Kota Asal dan Tujuan Anda</h2>
+		<div class="ban-top">
+		<form>
+			<div class="bnr-left">
+			<label class="inputLabel">Dari</label>
+				<select class="select1">
+                  <option>Pilih Kota Asal</option>
+				  <option>Banda Aceh</option><option>Siglie</option><option>Beureuneuen</option><option>Bireuen</option><option>Lhokseumawe</option><option>Pereulak</option><option>Langsa</option><option>Kuala Simpang</option><option>Medan</option><option>Meulaboh</option>
+				</select>
+			</div>
+			<div class="bnr-left">
+				<label class="inputLabel">Tujuan</label>
+				<select class="select1">
+                  <option>Pilih Kota Asal</option>
+				  <option>Banda Aceh</option><option>Siglie</option><option>Beureuneuen</option><option>Bireuen</option><option>Lhokseumawe</option><option>Pereulak</option><option>Langsa</option><option>Kuala Simpang</option><option>Medan</option><option>Meulaboh</option>
+				</select>
+			</div>
+				<div class="clearfix"></div>
+			</form>
 		</div>
-		<p class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;">© 2016 L300 TICKETS . All Rights Reserved | Design by  INF14</p>
+		<div class="ban-bottom">
+		<form>
+			<div class="bnr-right">
+				<label class="inputLabel">Waktu keberangkatan</label>
+				<input class="date" id="datepicker" type="text" value="hari-bulan-tahun" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'hari-bulan-tahun';}" required=>
+			</div>
+				<div class="clearfix"></div>
+				<!---start-date-piker---->
+				<link rel="stylesheet" href="css/jquery-ui.css" />
+				<script src="js/jquery-ui.js"></script>
+					<script>
+						$(function() {
+						$( "#datepicker,#datepicker1" ).datepicker();
+						});
+					</script>
+			<!---/End-date-piker---->
+		</form>
+		</div>
+		<div class="sear">
+			<form action="bus.html">
+			<button class="seabtn">Cari L300?</button>
+			</form>
+		</div>
 	</div>
+	<div class="clearfix"></div>
 </div>
-<!--- /copy-right ---->
 
 <!-- signin isiin login untuk loket disini-->
 	<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
