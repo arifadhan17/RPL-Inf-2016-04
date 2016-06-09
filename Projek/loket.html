@@ -13,28 +13,32 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 <link href="css/font-awesome.css" rel="stylesheet">
+
 <!-- Custom Theme files -->
 <script src="js/jquery-1.12.0.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <!--animate-->
 <link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
 <script src="js/wow.min.js"></script>
-	<script>
-		 new WOW().init();
-	</script>
+<script>
+	 new WOW().init();
+</script>
 <!--//end-animate-->
 
-<style>
-.banner {
-    background: url(images/13.jpg)no-repeat;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-    -ms-background-size: cover;
-    -moz-background-size: cover;
-    min-height: 30px;
-}
-</style>
+<!--untuk navigasi-->
+<link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
+<script type="text/javascript" src="js/ddsmoothmenu.js"></script>
+<script type="text/javascript">
+	ddsmoothmenu.init({
+		mainmenuid: "nav-menu", //menu DIV id
+		orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+		classname: 'navbar', //class added to menu's outer DIV
+		//customtheme: ["#1c5a80", "#18374a"],
+		contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+	})
+</script>
+<!--//end nav-->
+
 </head>
 
 <body>
@@ -56,28 +60,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--- /header ---->
 <!--- Navigation ---->    
 <nav class="navbar navbar-static-top">	<!--static penting biar submenunya tetap-->
-	<div class="footer-btm fadeInLeft animated" data-wow-delay="1.5s">
+	<div class="footer-btm wow fadeInLeft animated" data-wow-delay="1.5s">
 		<div class="navbar-main">  		
-			<div class="container"> 	
-				
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<div class="navbar-header">
-					  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					  </button>
-					</div>
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					
-					<div class="navbar-collapse collapse" id="navbar"> 
-						<nav class="navbar navbar-main">	
+			<div class="container" > 			
+							
+				<div class="navbar-collapse collapse" > 
+						<nav class="navbar navbar-main" id="nav-menu">	
 							<ul class="nav navbar-nav">
 							
-								<li><a href="index.html">HOME</a></li>
+								<li><a class="is-active" href="index.html">HOME</a></li>
 								
-								<li><a class="is-active" href="#">LOKET</a>
+								<li><a class="has-child" href="#">LOKET</a>
 									<ul class="submenu">
 										<li><a class="submenu-item" href="MenuCv.html">Menu CV</a></li>
 									</ul>							
@@ -95,8 +88,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 							</ul>
 						</nav>
-					</div><!-- /.navbar-collapse -->	
-				
+					</div><!-- /.navbar-collapse -->				
+									
 			</div>
 			
 			<div class="clearfix"></div>
