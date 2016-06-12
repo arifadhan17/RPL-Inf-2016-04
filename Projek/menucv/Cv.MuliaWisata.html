@@ -24,6 +24,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--//end-animate-->
 </head>
 </body>
+
 <div class="top-header">
 	<div class="container">
 	</div>
@@ -54,15 +55,77 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<span class="icon-bar"></span>
 					  </button>
 					</div>
-					<div class="navbar-collapse collapse" id="navbar"> 
-						<nav class="navbar navbar-main">		
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					
+					<div class="navbar-collapse collapse"> 
+						<nav class="navbar navbar-main" id="nav-menu">	
 							<ul class="nav navbar-nav">
-					</div>
+							
+								<li><a href="index.html">HOME</a></li>
+								
+								<li><a class="has-child is-active" href="#">LOKET</a>
+															
+								</li>
+								
+								<li><a class="has-child" href="#">TIKET</a>
+									
+								</li>
+
+								<li><a class="" href="contact.html">CONTACT US</a></li>
+								<li><a class="" href="about.html">ABOUT US</a></li>
+
+							</ul>
+						</nav>
+					</div><!-- /.navbar-collapse -->	
+				
 			</div>
+			
+			<div class="clearfix"></div>
 		</div>
 	</div>
 </nav>
+
+
 <center>
-<h3>Cv. Mulia Wisata </h3>
+
+<br><br>
+<h2>Cv. Mulia Wisata</h2>
+</center>
+
+
+<br><br>
+<div class="col-sm-2"></div>
+
+<div class="col-sm-8">
+<p>&nbsp &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Cv. Mulia Wisata merupakan suatu cv yang didirikan oleh pak Budi yang beralamat di Lueng Bata. Pada Cv. Mulia Wisata ini terdapat beberapa mobil L300 milik CV pribadi dan ada juga mobil titipan dari beberapa kerabat terdekat atau orang yang punya L300 namun belum memiliki CV. Pada CV. Mulia Wisata ini melayani keberangkatan malam dan juga pagi.</p>
+
+
+<br><br><br>
+<br><br>
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Lihat Daftar Penumpang</button>
+</div>
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        
+      </div>
+      <div class="modal-body">
+      <form action="../listpenumpang.html" method="post">
+      <input type="password" name="password">
+      <button>Login</button>
+      </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
 </body>
 </html>
