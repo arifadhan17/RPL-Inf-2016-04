@@ -1,5 +1,6 @@
 <html>
 <head>
+<title>Ata Gata Tiket Online | About</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Green Wheels Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -20,8 +21,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<script>
 		 new WOW().init();
 	</script>
-	
 <!--//end-animate-->
+<!--untuk navigasi-->
+<link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
+<script type="text/javascript" src="js/ddsmoothmenu.js"></script>
+<script type="text/javascript">
+	ddsmoothmenu.init({
+		mainmenuid: "nav-menu", //menu DIV id
+		orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+		classname: 'navbar', //class added to menu's outer DIV
+		//customtheme: ["#1c5a80", "#18374a"],
+		contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+	});
+</script>
+<!--//end nav-->
 </head>
 <body>
 
@@ -45,28 +58,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <nav class="navbar navbar-static-top">	<!--static penting biar submenunya tetap-->
 	<div class="footer-btm wow fadeInLeft animated" data-wow-delay="1.5s">
 		<div class="navbar-main">  		
-			<div class="container"> 	
-				
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<div class="navbar-header">
-					  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					  </button>
-					</div>
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					
-					<div class="navbar-collapse collapse"> 
+			<div class="container" > 			
+							
+				<div class="navbar-collapse collapse" > 
 						<nav class="navbar navbar-main" id="nav-menu">	
 							<ul class="nav navbar-nav">
 							
-								<li><a class="is-active" href="index.html">HOME</a></li>
+								<li><a href="index.html">HOME</a></li>
 								
 								<li><a class="has-child" href="#">LOKET</a>
 									<ul class="submenu">
-										<li><a class="submenu-item" a href="#" data-toggle="modal" data-target="#myModal4" >Login</a></li> <!--masuk ke modal khusus login-->
+										<li><a class="submenu-item" a href="#" data-toggle="modal" data-target="#modalLogin" >Login</a></li> <!--masuk ke modal khusus login-->
 										<li><a class="submenu-item" href="MenuCv.html">Menu CV</a></li>
 									</ul>							
 								</li>
@@ -74,25 +76,26 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<li><a class="has-child" href="#">TIKET</a>
 									<ul class="submenu">
 										<li><a class="submenu-item" href="Pesantiket.html">Pesan Tiket</a></li>
-										<li><a class="submenu-item" href="#">Cetak Tiket</a></li>
+										<li><a class="submenu-item" href="cetaktiket.html">Cetak Tiket</a></li>
 									</ul>
 								</li>
 
-								<li><a class="" href="contact.html">CONTACT US</a></li>
-								<li><a class="" href="about.html">ABOUT US</a></li>
+								<li><a class="" href="contact.html">CONTACT</a></li>
+								<li><a class="is-active" href="about.html">ABOUT</a></li>
 
 							</ul>
 						</nav>
-					</div><!-- /.navbar-collapse -->	
-				
+					</div><!-- /.navbar-collapse -->				
+									
 			</div>
 			
 			<div class="clearfix"></div>
 		</div>
 	</div>
 </nav>
+<!--- /Navigation ---->
 
-
+<div class="container">
 <center>
 <br>
 <h2>About Us</h2>
@@ -102,35 +105,96 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="col-sm-2"></div>
 
 <div class="col-sm-8">
-<p>&nbsp &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Tim kami ini merupakan suatu kelompok yang terbentuk dari pembelajaran mata kuliah Rekayasa Perangkat Lunak. Kelompok kami ini terdiri dari 5 anggota yakni Aida Afira, Dedek Fitri, Fadel Ariefa, M. Arif Ramadhan dan Zul Ikhlas. Banyak yang telah kami kerjakan  bersama-sama selama tim ini terbentuk.</p>
+	<p>&nbsp &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Tim kami ini merupakan suatu kelompok yang terbentuk dari pembelajaran mata kuliah Rekayasa Perangkat Lunak. Kelompok kami ini terdiri dari 5 anggota yakni Aida Afira, Dedek Fitri, Fadel Ariefa, M. Arif Ramadhan dan Zul Ikhlas. Banyak yang telah kami kerjakan  bersama-sama selama tim ini terbentuk.</p>
 
-<br><br>
+	<br><br>
 
-<div class="row">
-	<div class="col-sm-12">
-<div class="col-sm-2"></div>
-<div class="col-sm-4">
-<img class="img-responsive img-rounded img-left" src="about/1.jpg" alt="" style="width 300px; height=300px"> <center><label>Aida Afira</label></center>
-<br> <br></div>
-<div class="col-sm-4">
-<img class="img-responsive img-rounded img-center" src="about/2.jpg" alt=""> <center><label>Dedek Fitri</label></center>
-</div></div>
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="col-sm-2"></div>
+			<div class="col-sm-4">
+			<img class="img-responsive img-rounded img-left" src="images/about/1.jpg" alt="" style="width 300px; height=300px"> <center><label>Aida Afira</label></center><br><br>
+			</div>
+			
+			<div class="col-sm-4">
+			<img class="img-responsive img-rounded img-center" src="images/about/2.jpg" alt="" style="width 300px; height=300px"> <center><label>Dedek Fitri</label></center>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4">
+		<img class="img-responsive img-rounded img-right" src="images/about/3.jpg" alt="" style="width 300px; height=300px"> <center><label>Fadel Ariefa</label></center><br>
+		</div>
+
+		<div class="col-sm-4">
+		<img class="img-responsive img-rounded img-left" src="images/about/4.jpg" alt="" style="width 300px; height=300px"> <center><label>M. Arif Ramadhan</label></center><br>
+		</div>
+
+		<div class="col-sm-4">
+		<img class="img-responsive img-rounded img-left" src="images/about/5.jpg" alt="" style="width 300px; height=300px"> <center><label>Zul Ikhlas</label></center><br>
+		</div>
+	</div>
 </div>
-<div class="row">
-<div class="col-sm-4">
-<img class="img-responsive img-rounded img-right" src="about/3.jpg" alt=""> <center><label>Fadel Ariefa</label></center>
-<br></div>
-
-<div class="col-sm-4">
-<img class="img-responsive img-rounded img-left" src="about/4.jpg" alt=""> <center><label>M. Arif Ramadhan</label></center>
-<br> </div>
-
-<div class="col-sm-4">
-<img class="img-responsive img-rounded img-left" src="about/5.jpg" alt=""> <center><label>Zul Ikhlas</label></center>
-<br></div>
 </div>
 
+<!---copy-right ---->
+<div class="copy-right">
+	<div class="container">
+	
+		<div class="footer-social-icons wow fadeInDown animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInDown;">
+			<ul>
+				<li><a class="facebook" href="#"><span>Facebook</span></a></li>
+				<li><a class="twitter" href="#"><span>Twitter</span></a></li>
+				<li><a class="flickr" href="#"><span>Flickr</span></a></li>
+				<li><a class="googleplus" href="#"><span>Google+</span></a></li>
+				<li><a class="dribbble" href="#"><span>Dribbble</span></a></li>
+			</ul>
+		</div>
+		<p class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;">Ata Gata Tiket Online © 2016 | Design by Kelompok 4 RPL INF14</p>
+	</div>
 </div>
+<!--- /copy-right ---->
+
+<!--Modal Login-->
+<div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content modal-info">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>						
+			</div>
+			<div class="modal-body modal-spa">
+				<div class="login-grids">
+					<div class="login">
+						<div class="login-left">
+							<ul>
+								<center>
+								<img src="images/map1.png" alt="">
+								<h2><b>Login <br>Petugas Loket</b></h2>
+								</center>
+							</ul>
+						</div>
+						<div class="login-right">
+							<form action="loket.html" method="post">
+								<h3>Signin with your account </h3>
+								<div class="login-block input">
+									<input type="text" name="nip" class="form-control" placeholder="Enter your Email" required>
+								</div>
+								<div class="login-block input">
+									<input type="password" name="password" class="form-control" placeholder="Password" required>
+								</div>
+							
+								<input type="submit" value="LOGIN">
+							</form>
+						</div>
+						<div class="clearfix"></div>								
+					</div>
+					<br><br>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>	
+<!--/.Modal Login-->
 
 </body>
 </html>

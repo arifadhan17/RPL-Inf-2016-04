@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Blibli.com</title>
+<title>Ata Gata Tiket Online | Pesan Tiket</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Green Wheels Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -29,13 +29,35 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		 new WOW().init();
 	</script>
 <!--//end-animate-->
+
+<!--untuk navigasi-->
+<link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
+<script type="text/javascript" src="js/ddsmoothmenu.js"></script>
+<script type="text/javascript">
+	ddsmoothmenu.init({
+		mainmenuid: "nav-menu", //menu DIV id
+		orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+		classname: 'navbar', //class added to menu's outer DIV
+		//customtheme: ["#1c5a80", "#18374a"],
+		contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+	})
+</script>
+<!--//end nav-->
+
 </head>
+
 <body>
+<!-- top-header -->
+<div class="top-header">
+	<div class="container">
+	</div>
+</div>
+<!--- /top-header ---->
 <!--- header ---->
 <div class="header">
 	<div class="container">
 		<div class="logo wow fadeInDown animated" data-wow-delay=".5s">
-			<a href="index.html">Ata-Gata <span>Tiket: </span>Tempat Pembelian Tiket Cepat dan Mudah</a>
+			<a href="index.html">Ata Gata <span>Tiket Online</span> - Tempat Pembelian Tiket Cepat dan Mudah</a>
 		</div>
 		<div class="clearfix"></div>
 	</div>
@@ -58,49 +80,40 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					
-					<div class="navbar-collapse collapse" id="navbar"> 
-						<nav class="navbar navbar-main">	
+					<div class="navbar-collapse collapse"> 
+						<nav class="navbar navbar-main" id="nav-menu">	
 							<ul class="nav navbar-nav">
 							
-								<li><a  href="index.html">HOME</a></li>
+								<li><a href="index.html">HOME</a></li>
 								
 								<li><a class="has-child" href="#">LOKET</a>
 									<ul class="submenu">
-										<li><a class="submenu-item" a href="#" data-toggle="modal" data-target="#myModal4" >Login</a></li> <!--masuk ke modal khusus login-->
-										<li><a class="submenu-item" href="#">Menu CV</a></li>
+										<li><a class="submenu-item" a href="#" data-toggle="modal" data-target="#modalLogin" >Login</a></li> <!--masuk ke modal khusus login-->
+										<li><a class="submenu-item" href="MenuCv.html">Menu CV</a></li>
 									</ul>							
 								</li>
 								
 								<li><a class="has-child is-active" href="#">TIKET</a>
 									<ul class="submenu">
 										<li><a class="submenu-item" href="Pesantiket.html">Pesan Tiket</a></li>
-										<li><a class="submenu-item" href="#">Cetak Tiket</a></li>
+										<li><a class="submenu-item" href="cetaktiket.html">Cetak Tiket</a></li>
 									</ul>
 								</li>
 
-								<li><a class="" href="contact.html">CONTACT US</a></li>
-								<li><a class="" href="about.html">ABOUT US</a></li>
+								<li><a class="" href="contact.html">CONTACT</a></li>
+								<li><a class="" href="about.html">ABOUT</a></li>
 
 							</ul>
 						</nav>
-					</div><!-- /.navbar-collapse -->	
-				
-			</div>
-			
+					</div><!-- /.navbar-collapse -->					
+			</div>			
 			<div class="clearfix"></div>
 		</div>
 	</div>
 </nav>
 <!--- /Navigation ---->
-<!--- banner ---->
-<div class="banner-1">
-	<div class="container">
-		<h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;"> Ata-Gata Tiket , Terbaik dalam melayani perjalanan anda</h1>
-	</div>
-</div>
-<!--- /banner ---->
 
-<!-- test -->
+<!-- form biodata -->
 <div class = "container">
 	<div class = "">
 	<div class = "col-xs-offset-3 col-xs-8">
@@ -116,7 +129,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<label class="col-xs-4">No Telepon</label>
 					<input type="text" placeholder="Masukkan No telepon Anda" class="form-control" size="" required="required"><br>
 					<div class="col-xs-offset-10">
-						<button type="submit" class="btn btn-success"><a href="#" data-toggle="modal" data-target="#modalrek">Submit</a></button><br><br>
+						<a href="#" data-toggle="modal" data-target="#modalrek" class="btn btn-primary" >Submit</a>
 					</div>
 				</div>
 				
@@ -125,8 +138,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </div>
     </div>
 </div>
-<!-- /test -->
-
+<!-- /form biodata -->
+<br><br><br>
 <!---copy-right ---->
 <div class="copy-right">
 	<div class="container">
@@ -140,63 +153,65 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<li><a class="dribbble" href="#"><span>Dribbble</span></a></li>
 			</ul>
 		</div>
-		<p class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;">ɠ2016 L300 TICKETS . All Rights Reserved | Design by  INF14</p>
+		<p class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;">Ata Gata Tiket Online © 2016 | Design by Kelompok 4 RPL INF14</p>
 	</div>
 </div>
 <!--- /copy-right ---->
 
-<!-- signin isiin login untuk loket disini-->
-	<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content modal-info">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">׼/span></button>						
-				</div>
-				<div class="modal-body modal-spa">
-					<div class="login-grids">
-						<div class="login">
-							<div class="login-left">
-								<ul><br><br><br>
-									<center>
-									<img src="images/map1.png" alt="">
-									<h2><b>Login <br>Petugas Loket</b></h2>
-									</center>
-								</ul>
-							</div>
-							<div class="login-right">
-								<form>
-									<h3>Signin with your account </h3>
-									<input type="text" value="Enter your Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your mobile number or Email';}" required="">	
-									<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">	
-									<h4><a href="#">Forgot password</a></h4>
-									<div class="single-bottom">
-										<input type="checkbox" id="brand" value="">
-										<label for="brand"><span></span>Remember Me.</label>
-									</div>
-									<input type="submit" value="LOGIN">
-								</form>
-							</div>
-							<div class="clearfix"></div>								
+<!--Modal Login-->
+<div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content modal-info">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>						
+			</div>
+			<div class="modal-body modal-spa">
+				<div class="login-grids">
+					<div class="login">
+						<div class="login-left">
+							<ul>
+								<center>
+								<img src="images/map1.png" alt="">
+								<h2><b>Login <br>Petugas Loket</b></h2>
+								</center>
+							</ul>
 						</div>
+						<div class="login-right">
+							<form action="loket.html" method="post">
+								<h3>Signin with your account </h3>
+								<div class="login-block input">
+									<input type="text" name="nip" class="form-control" placeholder="Enter your Email" required>
+								</div>
+								<div class="login-block input">
+									<input type="password" name="password" class="form-control" placeholder="Password" required>
+								</div>
+							
+								<input type="submit" value="LOGIN">
+							</form>
+						</div>
+						<div class="clearfix"></div>								
 					</div>
+					<br><br>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- //signin -->
+</div>	
+<!--/.Modal Login-->
 	
-	
-	        <div class="modal fade" id="modalrek" tabindex="-1" role="modal" aria-labelledby="label">
-                                                <div class="modal-dialog" role="document">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header">
-                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                            <h1><center>No Rekening :<br> 001-01201245011 </center></h1>
-                                                        </div>
-                                                    </div>
-                                                </div>
-            </div>
-	
+<!--Modal Rekening-->
+<div class="modal fade" id="modalrek" tabindex="-1" role="modal" aria-labelledby="label">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h3><center/>No Rekening:</h3>
+			</div>
+			<h1><center><b/>001-01201245011</center></h1><br><br>
+		</div>
+	</div>
+</div>
+<!--/Modal Rekening-->
 
 </body>
 </html>
