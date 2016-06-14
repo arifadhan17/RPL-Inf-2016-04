@@ -23,7 +23,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	 new WOW().init();
 </script>
 <!--//end-animate-->
-
 <!--untuk navigasi-->
 <link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
 <script type="text/javascript" src="js/ddsmoothmenu.js"></script>
@@ -78,11 +77,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<nav class="navbar navbar-main" id="nav-menu">	
 							<ul class="nav navbar-nav">
 							
-								<li><a class="is-active" href="index.html">HOME</a></li>
+								<li><a class="is-active" href="#">HOME</a></li>
 								
 								<li><a class="has-child" href="#">LOKET</a>
 									<ul class="submenu">
-										<li><a class="submenu-item" a href="#" data-toggle="modal" data-target="#myModal4" >Login</a></li> <!--masuk ke modal khusus login-->
+										<li><a class="submenu-item" a href="#" data-toggle="modal" data-target="#modalLogin" >Login</a></li> <!--masuk ke modal khusus login-->
 										<li><a class="submenu-item" href="MenuCv.html">Menu CV</a></li>
 									</ul>							
 								</li>
@@ -94,8 +93,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</ul>
 								</li>
 
-								<li><a class="" href="contact.html">CONTACT US</a></li>
-								<li><a class="" href="about.html">ABOUT US</a></li>
+								<li><a class="" href="contact.html">CONTACT</a></li>
+								<li><a class="" href="about.html">ABOUT</a></li>
 
 							</ul>
 						</nav>
@@ -111,7 +110,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--- banner ---->
 <div class="banner">
 	<div class="container">
-		<h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;"> Ata-Gata Tiket Online</h1>
+		<h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;"><b>Ata-Gata Tiket , Terbaik dalam jual beli tiket Online L300</b></h1>
 	</div>
 </div>
 <!--- /banner ---->
@@ -129,51 +128,51 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<li><a class="dribbble" href="#"><span>Dribbble</span></a></li>
 			</ul>
 		</div>
-		<p class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;">© 2016 L300 TICKETS . All Rights Reserved | Design by  INF14</p>
+		<p class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;">Ata Gata Tiket Online © 2016 | Design by Kelompok 4 RPL INF14</p>
 	</div>
 </div>
 <!--- /copy-right ---->
 
-<!-- signin isiin login untuk loket disini-->
-	<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content modal-info">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>						
-				</div>
-				<div class="modal-body modal-spa">
-					<div class="login-grids">
-						<div class="login">
-							<div class="login-left">
-								<ul><br><br><br>
-									<center>
-									<img src="images/map1.png" alt="">
-									<h2><b>Login <br>Petugas Loket</b></h2>
-									</center>
-								</ul>
-							</div>
-							<div class="login-right">
-								<form>
-									<h3>Signin with your account </h3>
-									<input type="text" value="Enter your Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your mobile number or Email';}" required="">	
-									<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">	
-									<h4><a href="#">Forgot password</a></h4>
-									<div class="single-bottom">
-										<input type="checkbox" id="brand" value="">
-										<label for="brand"><span></span>Remember Me.</label>
-									</div>
-									<input type="submit" value="LOGIN">
-								</form>
-							</div>
-							<div class="clearfix"></div>								
+<!--Modal Login-->
+<div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content modal-info">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>						
+			</div>
+			<div class="modal-body modal-spa">
+				<div class="login-grids">
+					<div class="login">
+						<div class="login-left">
+							<ul>
+								<center>
+								<img src="images/map1.png" alt="">
+								<h2><b>Login <br>Petugas Loket</b></h2>
+								</center>
+							</ul>
 						</div>
+						<div class="login-right">
+							<form action="loket.html" method="post">
+								<h3>Signin with your account </h3>
+								<div class="login-block input">
+									<input type="text" name="nip" class="form-control" placeholder="Enter your Email" required>
+								</div>
+								<div class="login-block input">
+									<input type="password" name="password" class="form-control" placeholder="Password" required>
+								</div>
+							
+								<input type="submit" value="LOGIN">
+							</form>
+						</div>
+						<div class="clearfix"></div>								
 					</div>
+					<br><br>
 				</div>
 			</div>
 		</div>
 	</div>
-	
-<!-- //signin -->
+</div>	
+<!--/.Modal Login-->
 
 </body>
 </html>
